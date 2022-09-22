@@ -1,18 +1,19 @@
 
 public class Torneo {
-	private String codigo="";
+	public static int cont=0;
+	private int codigo=0;
 	private String nombre="";
 	private String ciudad="";
 	public Torneo(String codigo, String nombre, String ciudad) {
 		super();
-		this.codigo = codigo;
+		this.codigo = cont++;
 		this.nombre = nombre;
 		this.ciudad = ciudad;
 	}
-	public String getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(String codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombre() {
